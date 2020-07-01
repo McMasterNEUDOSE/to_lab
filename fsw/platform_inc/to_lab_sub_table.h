@@ -38,6 +38,7 @@
 #include "ci_lab_msgids.h"
 
 #include "sample_app_msgids.h"
+#include "hk_msgids.h"
 
 #if 0
 #include "hs_msgids.h"
@@ -54,6 +55,7 @@ static TO_subscription_t TO_SubTable[] = {
     {CFE_SB_MSGID_WRAP_VALUE(CI_LAB_HK_TLM_MID), {0, 0}, 4},
     {CFE_SB_MSGID_WRAP_VALUE(SAMPLE_APP_HK_TLM_MID), {0, 0}, 4},
 
+    {HK_HK_TLM_MID, {0, 0}, 4},
 #if 0
             /* Add these if needed */
             {HS_HK_TLM_MID,         {0,0},  4},
@@ -80,10 +82,9 @@ static TO_subscription_t TO_SubTable[] = {
 
     {CFE_SB_MSGID_WRAP_VALUE(CFE_ES_APP_TLM_MID), {0, 0}, 4},
     {CFE_SB_MSGID_WRAP_VALUE(CFE_ES_MEMSTATS_TLM_MID), {0, 0}, 4},
-
     {TO_UNUSED, {0, 0}, 0},
-    {TO_UNUSED, {0, 0}, 0},
-    {TO_UNUSED, {0, 0}, 0}};
+    {TO_UNUSED, {0, 0}, 0}
+};
 
 /************************
 ** End of File Comment **
