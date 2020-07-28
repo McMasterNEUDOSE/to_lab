@@ -4,7 +4,14 @@ project(CFS_TO_LAB C)
 include_directories(fsw/mission_inc)
 include_directories(fsw/platform_inc)
 include_directories(${ci_lab_MISSION_DIR}/fsw/platform_inc)
+
+#required for subscription table
 include_directories(${sample_app_MISSION_DIR}/fsw/platform_inc)
+include_directories(${eps_MISSION_DIR}/fsw/platform_inc)
+include_directories(${comms_MISSION_DIR}/fsw/platform_inc)
+include_directories(${payload_MISSION_DIR}/fsw/platform_inc)
+
+
 
 aux_source_directory(fsw/src APP_SRC_FILES)
 
